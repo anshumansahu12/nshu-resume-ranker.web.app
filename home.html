@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NSHU Resume Ranker</title>
+  <link rel="stylesheet" href="styles/home.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="left-links">
+      <button onclick="location.href='about.html'" class="nav-btn">About Founder</button>
+    </div>
+    <div class="right-links">
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h2>Welcome to NSHU Resume Ranker</h2>
+    <p>Choose your role or explore our tools</p>
+    <div class="buttons">
+      <button onclick="location.href='recruiter.html'">I'm a Job Recruiter</button>
+      <button onclick="location.href='compare.html'">Compare Resumes</button>
+    </div>
+  </div>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Ranker</title>
+  <link rel="stylesheet" href="styles/recruiter.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Ranker</h1>
+    <div class="section">
+      <h3>Job Description</h3>
+      <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+    </div>
+    <div class="section">
+      <h3>Required Skills</h3>
+      <input type="text" id="skillInput" placeholder="Type a skill..." />
+      <div id="skillSuggestions" class="suggestions"></div>
+      <div id="skillTags" class="selected-skills"></div>
+    </div>
+
+    <div class="section">
+      <h3>Upload Resumes</h3>
+      <input type="file" id="resumeUpload" multiple accept=".pdf,.doc,.docx"/>
+      <ul id="fileList"></ul>
+    </div>
+
+    <div class="section">
+      <button id="analyzeBtn">Analyze & Rank</button>
+    </div>
+
+    <div class="section" id="resultSection">
+      <h3>Ranking Results</h3>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="scripts/recruiter.js"></script>
+</body>
+</html>

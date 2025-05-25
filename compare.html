@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Resumes</title>
+  <link rel="stylesheet" href="styles/compare.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Compare Resumes</h1>
+    <p class="description">
+      Upload multiple PDF resumes and let our AI extract skills, project information, and give a smart comparison — no job description needed!
+    </p>
+
+    <div class="upload-box">
+      <label for="resumeInput">Select PDF Resumes:</label>
+      <input type="file" id="resumeInput" multiple accept=".pdf">
+      <button onclick="compareResumes()">Compare Resumes</button>
+    </div>
+
+    <div id="output" class="results"></div>
+  </div>
+
+  <script src="scripts/compare.js"></script>
+</body>
+</html>

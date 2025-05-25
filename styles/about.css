@@ -1,0 +1,183 @@
+:root {
+    --bg-light: linear-gradient(120deg, #f0f4ff, #e3e7ff);
+    --text-light: #1e1e2f;
+    --card-light: rgba(255, 255, 255, 0.65);
+  
+    --bg-dark: linear-gradient(120deg, #111827, #1f2937);
+    --text-dark: #f9fafb;
+    --card-dark: rgba(31, 41, 55, 0.6);
+  
+    --accent: #6366f1;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-light);
+    transition: all 0.4s ease;
+  }
+  
+  body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .about-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--card-light);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    gap: 50px;
+    transition: background 0.4s ease;
+  }
+  
+  body.dark-mode .about-layout {
+    background: var(--card-dark);
+  }
+  
+  .left-section {
+    flex: 1.5;
+    min-width: 300px;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .profile-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent);
+    box-shadow: 0 12px 35px rgba(99, 102, 241, 0.3);
+    transition: transform 0.4s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.06);
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #6b7280;
+    font-weight: 500;
+  }
+  
+  body.dark-mode .tagline {
+    color: #d1d5db;
+  }
+  
+  .contact p,
+  .contact a {
+    font-size: 1rem;
+    margin: 8px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+  
+  .contact i {
+    color: var(--accent);
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .contact a:hover {
+    color: var(--accent);
+  }
+  
+  .section {
+    margin-top: 30px;
+  }
+  
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  
+  .section p,
+  .section ul {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .section ul {
+    padding-left: 20px;
+  }
+  
+  .section li {
+    margin-bottom: 8px;
+    list-style: disc;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #4f46e5;
+  }
+  
+  @media (max-width: 768px) {
+    .about-layout {
+      flex-direction: column;
+      padding: 25px;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
+  
+    h1 {
+      font-size: 2.3rem;
+    }
+  
+    .section h2 {
+      font-size: 1.4rem;
+    }
+  }

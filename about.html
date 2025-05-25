@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Anshuman Shahu</title>
+  <link rel="stylesheet" href="styles/about.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6a011.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="about-layout">
+      <!-- LEFT: INFO -->
+      <div class="left-section">
+        <h1>Anshuman Shahu</h1>
+        <div class="contact">
+          <p><i class="fas fa-phone"></i> +91 9527316881</p>
+          <p><i class="fas fa-map-marker-alt"></i> Jaitala, Nagpur</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:anshumanshahu@hotmail.com">anshumanshahu@hotmail.com</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/anshuman-shahu" target="_blank">LinkedIn</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/anshumansahu12" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="section">
+          <h2>Objective</h2>
+          <p>Computer Science graduate with hands-on experience in software development and cybersecurity. Skilled in Python, networking tools (Wireshark, Nmap), and AI-driven automation. Seeking an entry-level software development role to apply technical expertise in innovative projects.</p>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <ul>
+            <li>Diploma in Computer Science – Government Polytechnic, Gondia (2024)</li>
+            <li>B.Tech in Computer Technology – Priyadarshini College Of Engineering, Nagpur (Present)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Skills</h2>
+          <ul>
+            <li>Languages: Python, Dart, XML</li>
+            <li>Web: HTML, CSS, JavaScript</li>
+            <li>Cybersecurity: Nmap, Wireshark, Burp Suite, Linux Admin</li>
+            <li>AI/ML: Hugging Face Models</li>
+            <li>Database: Firebase</li>
+            <li>Tools: VS Code, Git/GitHub, Flutter, Cursor AI</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Experience</h2>
+          <p><strong>Anorg Technologies Pvt. Ltd (Aug 2022)</strong></p>
+          <ul>
+            <li>Developed IoT solutions ensuring seamless device connectivity</li>
+            <li>Worked with sensors for data collection and cloud sync</li>
+            <li>Integrated IoT with AI and NLP for automation</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Projects</h2>
+          <ul>
+            <li>Water Monitoring System using TDS Sensor</li>
+            <li>Static E-Commerce Webpage</li>
+            <li>DriveLink – Cloud File Sharing with QR Code</li>
+            <li>Cloud-based To-Do List (Android)</li>
+            <li>NSHU Resume Ranker – Python Flask Website</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Certificates</h2>
+          <ul>
+            <li>IoT Internship - Anorg Technologies (2022)</li>
+            <li>Power BI Fundamentals (2024)</li>
+            <li>Linux Administration - Great Learning (2024)</li>
+            <li>Hacker X – Online Certificate (2025)</li>
+            <li>TATA Cybersecurity Analyst Simulation – Forage (March 2025)</li>
+          </ul>
+        </div>
+      </div>
+      <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+  }
+
+  window.onload = () => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') document.body.classList.add('dark-mode');
+  };
+</script>
+
+      <!-- RIGHT: PROFILE IMAGE -->
+      <div class="right-section">
+        <img src="images/anshuman.jpg" alt="Anshuman Shahu" class="profile-img" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
